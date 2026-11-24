@@ -2,20 +2,13 @@
 
 Extract cue text from a WebVTT file for reading or editing.
 
-Open `index.html` in a modern browser. Edit the sample inputs to update the result, then print or download it. Processing stays in the tab.
+## Run
+
+Use Node.js 20+. Run `node cli.mjs example.txt`, or pipe UTF-8 text into `node cli.mjs -`. Redirect stdout to keep the result. Other Node.js projects can import `transform` from `./transform.mjs`.
 
 ## Example
 
-Input:
-
-```text
-WEBVTT
-
-00:00:00.000 --> 00:00:02.000
-Welcome everyone.
-```
-
-Expected output includes:
+WebVTT captions. The bundled sample produces output including:
 
 ```text
 Welcome everyone.
@@ -23,11 +16,11 @@ Welcome everyone.
 
 ## Limitations
 
-Use the input format shown in the worked example. The transformation runs in browser memory; export the result before closing the tab.
+Input is processed in memory. Use the format shown in the example file.
 
 ## Development
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for setup and test commands, and the [changelog](CHANGELOG.md) for project history.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for checks and [CHANGELOG.md](CHANGELOG.md) for changes.
 
 ## License
 

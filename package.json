@@ -1,0 +1,15 @@
+{
+  "name": "vtt-caption-transcript",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Extract cue text from a WebVTT file for reading or editing.",
+  "license": "MIT",
+  "type": "module",
+  "exports": "./transform.mjs",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test"
+  }
+}
